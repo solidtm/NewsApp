@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface NewsRepository {
 
-    suspend fun getNewsHeadLines() : ResultState<APIResponse.GetTopNewsResponse>
+    suspend fun getNewsHeadLines(country: String, page: Int) : ResultState<APIResponse.GetTopNewsResponse>
     suspend fun getSearchedNews(searchQuery: String): ResultState<APIResponse.GetTopNewsResponse>
 
     //database functions
