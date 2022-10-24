@@ -8,8 +8,10 @@ import com.solid.newsapp.data.model.APIResponse
 import com.solid.newsapp.data.model.util.ResultState
 import com.solid.newsapp.domain.usecase.GetNewsHeadlinesUseCase
 import com.solid.newsapp.util.isInternetAvailable
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 class NewsViewModel(
     private val app : Application,
